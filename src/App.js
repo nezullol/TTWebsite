@@ -14,7 +14,7 @@ const App = () => {
   const [Data, setData] = useState({});
   useEffect(() => {
     setData(JsonData);
-  });
+  },[]);
   return (
     <Router>
       <div className="App">
