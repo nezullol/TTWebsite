@@ -1,17 +1,31 @@
 import "../App.css";
-import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Card from '@mui/material/Card';
+import Typography from '@mui/material/Typography';
 
-const Div = styled("div")(({ theme }) => ({
-  ...theme.typography.button,
-  backgroundColor: theme.palette.background.paper,
-  padding: theme.spacing(1),
-}));
 
 export default function TypographyTheme(props) {
+  const style = {
+    display: "inline-block",
+    flexWrap: "wrap",
+    "& > :not(style)": {
+      m: 1,
+      width: 600,
+      height: 128,
+    },
+    color: "black",
+    justifyContent: "center",
+    alignContent: "center",
+    marginTop: 30,
+  };
   return (
-    <Div>
+    <Box sx= {style}>
+      <Card>
+<Typography>
       <div>{props.data.name}</div>
       <div>{props.data.bio}</div>
-    </Div>
+</Typography>
+      </Card>
+    </Box>
   );
 }
