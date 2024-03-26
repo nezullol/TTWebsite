@@ -1,36 +1,17 @@
-import '../App.css';
+import "../App.css";
+import { styled } from "@mui/material/styles";
 
+const Div = styled("div")(({ theme }) => ({
+  ...theme.typography.button,
+  backgroundColor: theme.palette.background.paper,
+  padding: theme.spacing(1),
+}));
 
-
-function About() {
+export default function TypographyTheme(props) {
   return (
-    <div className="About">
-      <ul> 
-
-<ul>ABOUT 
-
-<br/>
-
-Hi im chris (the OWNER) this is a little about me and my background and expertise
-<br/>
-<br/>
-
-</ul>
-
-
-<ul>PERSONAL PROJECTS</ul>
-<ul>INFO ABOUT HOW THE OWNER</ul>
-<ul>PORTFOLIO Link</ul>
-<ul>BLOG</ul>
-      </ul>
-<ul>
-
-    <ul> parallax background</ul>
-</ul>
-
-    </div>
-  )
+    <Div>
+      <div>{props.data.name}</div>
+      <div>{props.data.bio}</div>
+    </Div>
+  );
 }
-
-
-export default About;

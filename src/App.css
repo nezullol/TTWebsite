@@ -45,17 +45,16 @@
   color: azure;
 }
 
-.Nav a{
+.Nav a {
   color: azure;
   text-decoration: none;
-
 }
 
 .hamburger {
   padding-left: 5px;
 }
 
-.hamburger :hover{
+.hamburger :hover {
   cursor: pointer;
 }
 
@@ -65,9 +64,8 @@
   visibility: hidden;
   justify-content: flex-start;
   align-items: center;
-
 }
 
-.link-item{
+.link-item {
   padding: 5px;
 }

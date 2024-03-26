@@ -1,30 +1,26 @@
-import '../App.css';
+import "../App.css";
+import { styled } from "@mui/material/styles";
 
-
-
-function Contact() {
+function Contact(props) {
+  const Div = styled("div")(({ theme }) => ({
+    ...theme.typography.button,
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(1),
+  }));
   return (
+    <Div>
+      
     <div className="Contact">
       <ul>CONTACT</ul>
-      <ul>Address:
-      88853 Highway 9 Lineville Al 36266
+      <ul>{props.data.address} </ul>
+      <ul>{props.data.phone}</ul>
+      <ul>{props.data.business_hours}</ul>
+      <ul>{props.data.email}</ul>
+      <ul>
       </ul>
-      <ul>Phone Number
-      (256) - 203 - 4240
-      </ul>
-      <ul>Business Hours
-      Mon - Friday 11 am - 6pm
-      </ul>
-      <ul>Emails
-      chris@terratechsolutions.com
-      </ul>
-      <ul>    
-        <ul> Across the street from Retrac </ul>
-    <div className='background'> Parallax background </div>
-    </ul>
     </div>
-  )
+    </Div>
+  );
 }
-
 
 export default Contact;
