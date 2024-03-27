@@ -34,7 +34,7 @@ function Home(props) {
         </Typography>
       </Card>
     </Box>
-  );
-}
 
+  )
+  }
 export default Home;

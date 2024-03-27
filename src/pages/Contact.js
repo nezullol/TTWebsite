@@ -32,7 +32,6 @@ function Contact(props) {
         </Typography>
       </Card>
     </Box>
-  );
+  )
 }
-
 export default Contact;
