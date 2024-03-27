@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TTWebsite/static/css/main.e0881340.css",
+    "main.js": "/TTWebsite/static/js/main.8a528ae5.js",
+    "static/media/bg.png": "/TTWebsite/static/media/bg.d63cfd51f1a63591fdd7.png",
+    "static/media/Pixel-LCD-7.woff": "/TTWebsite/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
+    "index.html": "/TTWebsite/index.html",
+    "main.e0881340.css.map": "/TTWebsite/static/css/main.e0881340.css.map",
+    "main.8a528ae5.js.map": "/TTWebsite/static/js/main.8a528ae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0881340.css",
+    "static/js/main.8a528ae5.js"
+  ]
+}
